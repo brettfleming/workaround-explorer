@@ -1,7 +1,8 @@
 import {getRoles, getCompanies} from './modules/salaryData.js'
+import {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary} from './modules/workAroundModule.js'
 
-const companies = [];
-const roles = [];
+const companies = getCompanies();
+const roles = getRoles();
 
 renderInputButtons(companies, 'company');
 renderInputButtons(roles, 'role');

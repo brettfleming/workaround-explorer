@@ -1,5 +1,5 @@
-import {getDataByRole, GetDataByCompany} from './modules/salaryData.js'
-import salaryData from './modules/salaryData.js'
+import {getDataByRole, GetDataByCompany} from './salaryData.js'
+import salaryData from './salaryData.js'
 
 const getAverageSalaryByRole = role => {
     const roleData = getDataByRole();
