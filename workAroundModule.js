@@ -20,7 +20,7 @@ const getAverageSalaryByRole = role => {
   }
 
   const getIndustryAverageSalary = () => {
-    const allSalaries = getDataByRole().map(obj => obj.salary);
+    const allSalaries = salaryData.map(obj => obj.salary);
     return calculateAverage(allSalaries);
   }
 
@@ -30,3 +30,4 @@ const getAverageSalaryByRole = role => {
     return (total / arrayOfNumbers.length).toFixed(2);
   }
   
+  export {getAverageSalaryByRole, getAverageSalaryByCompany, getSalaryAtCompany, getIndustryAverageSalary }
