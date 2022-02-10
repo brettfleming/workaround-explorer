@@ -6,3 +6,10 @@ const getAverageSalaryByRole = role => {
     const salariesOfRole = roleData.map(obj => obj.salary);
     return calculateAverage(salariesOfRole);
   }
+
+  const getAverageSalaryByCompany = company => {
+    const companyData = GetDataByCompany();
+    const salariesAtCompany = companyData.map(obj => obj.salary);
+    return calculateAverage(salariesAtCompany);
+  }
+  
