@@ -19,8 +19,14 @@ const getAverageSalaryByRole = role => {
     return roleAtCompany.salary;
   }
 
-  onst getIndustryAverageSalary = () => {
+  const getIndustryAverageSalary = () => {
     const allSalaries = getDataByRole().map(obj => obj.salary);
     return calculateAverage(allSalaries);
+  }
+
+  function calculateAverage(arrayOfNumbers) {
+    let total = 0;
+    arrayOfNumbers.forEach(number => total += number);
+    return (total / arrayOfNumbers.length).toFixed(2);
   }
   
