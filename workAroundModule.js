@@ -13,3 +13,14 @@ const getAverageSalaryByRole = role => {
     return calculateAverage(salariesAtCompany);
   }
   
+  const getSalaryAtCompany = (role, company) => {
+    const companyData = GetDataByCompany();
+    const roleAtCompany = companyData.find(obj => obj.role === role);
+    return roleAtCompany.salary;
+  }
+
+  onst getIndustryAverageSalary = () => {
+    const allSalaries = getDataByRole().map(obj => obj.salary);
+    return calculateAverage(allSalaries);
+  }
+  
