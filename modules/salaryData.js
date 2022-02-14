@@ -14,6 +14,7 @@ const salaryData = [
   { role: "Software Engineer I", company: "Small Data Inc.", salary: 95000 },
 ];
 
+//this function gets the roles that can be in the data
 const getRoles = () => {
   return [
     "CTO",
