@@ -23,7 +23,7 @@ const getRoles = () => {
     "Software Engineer I",
   ];
 };
-
+//returns the company data
 const getCompanies = () => {
   return ["Big Data Inc.", "Medium Data Inc.", "Small Data Inc."];
 };
