@@ -27,14 +27,14 @@ const getRoles = () => {
 const getCompanies = () => {
   return ["Big Data Inc.", "Medium Data Inc.", "Small Data Inc."];
 };
-
+//uses a fliter method to select the data for a specific role
 const getDataByRole = (role) => {
   return salaryData.filter((obj) => obj.role === role);
 };
-
+//uses the filter method to slecet the data for a specific company 
 const getDataByCompany = (company) => {
   return salaryData.filter((obj) => obj.company === company);
 };
-
+//export function
 export { getRoles, getCompanies, getDataByRole, getDataByCompany };
 export default salaryData;
